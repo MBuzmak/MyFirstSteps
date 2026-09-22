@@ -19,12 +19,6 @@ public class MethodsOfDays {
     }
 
     public static int weekdayCounts(String[] days) {
-        int count = 0;
-        for (int x = 0; x < days.length; x++) {
-            if (!isWeekend(days[x])) {
-                count++;
-            }
-        }
-        return count;
+        return days.length - weekendCounts(days);
     }
 }
