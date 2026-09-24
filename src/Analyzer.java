@@ -8,7 +8,7 @@ class Analyzer {
     }
 
     static class SpamAnalizer implements TextAnalyzer {
-        String[] keywords = {"SPAM", "SALE", "FREE"};
+        private String[] keywords = {"SPAM", "SALE", "FREE"};
 
         @Override
         public Label processText(String text) {
@@ -23,7 +23,7 @@ class Analyzer {
 
 
     static class NegativeTextAnalizer implements TextAnalyzer {
-        String[] keywords = {":(", "("};
+        private String[] keywords = {":(", "("};
 
         @Override
         public Label processText(String text) {
@@ -37,7 +37,7 @@ class Analyzer {
     }
 
     static class TooLongTextAnalizer implements TextAnalyzer {
-        int maxLenght = 50;
+        private int maxLenght = 50;
 
         @Override
         public Label processText(String text) {
