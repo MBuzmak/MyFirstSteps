@@ -1,10 +1,11 @@
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Programm {
     static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        LinkedList<Integer> list = new LinkedList<>();
+        List<Integer> list = new LinkedList<>();
         while (scan.hasNextInt()) {
             list.add(scan.nextInt());
         }
