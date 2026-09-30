@@ -14,7 +14,7 @@ public class DeserializeTest {
         ObjectMapper mapper = new ObjectMapper()
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
-        Deserialize.User user = mapper.readValue(JSON, Deserialize.User.class);
+        User user = mapper.readValue(JSON, User.class);
 
         assertEquals(2, user.getId());
         assertEquals("faye", user.getName());
